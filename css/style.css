@@ -17,10 +17,14 @@
 
 .about-location-map {
   height:100%;
+
+}
+
     @media only screen and (max-width: 600px) {
- height:580px !important;
-}
-}
+        .about-location-map {
+          height:580px !important;
+        }
+    }
 
 
 
