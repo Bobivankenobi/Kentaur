@@ -47,6 +47,24 @@ display:inline-block;
 
          }
 
+         table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            box-shadow: 1px 2px 3px 1px #BA265D;
+          }
+          
+          td, th {
+            border: 1px solid #BA265D;
+            text-align: left;
+            padding: 8px;
+            text-align:center;
+          }
+          
+          tr:nth-child(even) {
+            background-color: #dddddd;
+          }
+
          .popup-gallery img:hover {
             opacity:0.7;
          }
