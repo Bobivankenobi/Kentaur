@@ -52,7 +52,6 @@ $(".search__input").keyup(function(event) {
     console.log(currentValue);
     var keycode = (event.keyCode ? event.keyCode : event.which);
 	if(keycode == '13'){
-        alert('You pressed a "enter" key in textbox');	
         callGsce(currentValue);
     }
     
