@@ -3,11 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
         <title>Kentaur Apartmani, Vrnjačka Banja</title>
     </head>
     <body>
@@ -15,13 +13,8 @@
             <header class="header">
                 <img src="img/logo.png" alt="trillo logo" class="logo">
 
-                <form action="#" class="search">
-                    <input type="text" class="search__input" placeholder="Search hotels">
-                    <button class="search__button">
-                        <svg class="search__icon">
-                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-                        </svg>
-                    </button>
+                <form action="#" class="search">               
+                    <div class="gcse-search"></div>
                 </form>
 
                 <nav class="user-nav">
@@ -38,7 +31,7 @@
             <div class="content">
                 <nav class="sidebar">
                     <ul class="side-nav">
-                        <li class="side-nav__item side-nav__item--active">
+                        <li class="side-nav__item side-nav-about-us">
                             <a href="index.html" class="side-nav__link">
                                 <svg class="side-nav__icon">
                                     <use xlink:href="img/sprite.svg#icon-home"></use>
@@ -46,7 +39,7 @@
                                 <span>O nama</span>
                             </a>
                         </li>
-                        <li class="side-nav__item">
+                        <li class="side-nav__item side-nav-gallery">
                             <a href="galerija.html" class="side-nav__link">
                                 <svg class="side-nav__icon">
                                     <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
@@ -54,7 +47,7 @@
                                 <span>Galerija</span>
                             </a>
                         </li>
-                        <li class="side-nav__item">
+                        <li class="side-nav__item side-nav-prices">
                             <a href="cenovnik.html" class="side-nav__link">
                                 <svg class="side-nav__icon">
                                     <use xlink:href="img/sprite.svg#icon-key"></use>
@@ -62,7 +55,7 @@
                                 <span>Cenovnik</span>
                             </a>
                         </li>
-                        <li class="side-nav__item">
+                        <li class="side-nav__item side-nav-location">
                             <a href="Lokacija.html" class="side-nav__link">
                                 <svg class="side-nav__icon">
                                     <use xlink:href="img/sprite.svg#icon-map"></use>
@@ -76,7 +69,6 @@
                         &copy; 2019  Web Solutions For All. All rights reserved JB.
                     </div>
                 </nav>
-
 
 
                 <main class="hotel-view">
@@ -213,6 +205,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
          <script src="./index.js"></script>
                 <!--Start of Tawk.to Script-->
+                <script async src="https://cse.google.com/cse.js?cx=014720996530474667277:cpo2mph9bct"></script>
         <script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
         (function(){

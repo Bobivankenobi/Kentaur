@@ -16,3 +16,29 @@ $('.popup-gallery').magnificPopup({
     }
 });
 
+
+
+let locationMatch = "Lokacija.html";
+let pricesMatch = "cenovnik.html";
+let indexMatch = "index.html";
+let galleryMatch = "galerija.html";
+if(window.location.href.match(indexMatch)){
+    console.log("index");
+    $(".side-nav-about-us").addClass("side-nav__item--active");
+    $(".side-nav-about-us").siblings().removeClass("side-nav__item--active-js");
+}
+if(window.location.href.match(pricesMatch)){
+    console.log("prices")
+    $(".side-nav-prices").addClass("side-nav__item--active");
+    $(".side-nav-prices").siblings().removeClass("side-nav__item--active-js");
+}
+if(window.location.href.match(locationMatch)){
+    console.log("location")
+    $(".side-nav-location").addClass("side-nav__item--active");
+    $(".side-nav-location").siblings().removeClass("side-nav__item--active-js");
+}
+if(window.location.href.match(galleryMatch)){
+    console.log("gallery")
+    $(".side-nav-gallery").addClass("side-nav__item--active");
+    $(".side-nav-gallery").siblings().removeClass("side-nav__item--active-js");
+}
