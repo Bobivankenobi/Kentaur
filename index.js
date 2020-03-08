@@ -17,28 +17,59 @@ $('.popup-gallery').magnificPopup({
 });
 
 
-
+console.log("boki")
 let locationMatch = "Lokacija.html";
 let pricesMatch = "cenovnik.html";
 let indexMatch = "index.html";
 let galleryMatch = "galerija.html";
+$(".side-nav-about-us").addClass("side-nav__item--active-js");
 if(window.location.href.match(indexMatch)){
     console.log("index");
-    $(".side-nav-about-us").addClass("side-nav__item--active");
+    $(".side-nav-about-us").addClass("side-nav__item--active-js");
     $(".side-nav-about-us").siblings().removeClass("side-nav__item--active-js");
 }
 if(window.location.href.match(pricesMatch)){
     console.log("prices")
-    $(".side-nav-prices").addClass("side-nav__item--active");
+    $(".side-nav-prices").addClass("side-nav__item--active-js");
     $(".side-nav-prices").siblings().removeClass("side-nav__item--active-js");
 }
 if(window.location.href.match(locationMatch)){
     console.log("location")
-    $(".side-nav-location").addClass("side-nav__item--active");
+    $(".side-nav-location").addClass("side-nav__item--active-js");
     $(".side-nav-location").siblings().removeClass("side-nav__item--active-js");
 }
 if(window.location.href.match(galleryMatch)){
     console.log("gallery")
-    $(".side-nav-gallery").addClass("side-nav__item--active");
+    $(".side-nav-gallery").addClass("side-nav__item--active-js");
     $(".side-nav-gallery").siblings().removeClass("side-nav__item--active-js");
+}
+
+
+
+$(".search__input").keyup(function(event) {
+
+    let currentValue = $(".search__input").val();
+    console.log(currentValue);
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+	if(keycode == '13'){
+        alert('You pressed a "enter" key in textbox');	
+        callGsce(currentValue);
+    }
+    
+});
+
+
+$(".search__button ").click(function() {
+    let currentValue = $(".search__input").val();
+    if(currentValue !== ""){
+        callGsce(currentValue);
+    }
+
+  });
+
+function callGsce(currentValue) {
+    console.log( $("#___gcse_0").find("input"));
+    google.search.cse.element.getElement('abcd').execute(currentValue);
+    $("#___gcse_0 ").addClass("visible");
+   
 }

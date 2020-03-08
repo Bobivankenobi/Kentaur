@@ -15,8 +15,16 @@
             <header class="header">
                 <img src="img/logo.png" alt="trillo logo" class="logo">
 
-                <form action="#" class="search">               
-                    <div class="gcse-search"></div>
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search hotels">
+                  
+                        <!-- <div class="gcse-search"></div> -->
+                        <gcse:search gname='abcd'></gcse:search>
+                    <button class="search__button ">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
                 </form>
 
                 <nav class="user-nav">
@@ -71,6 +79,7 @@
                         &copy; 2019  Web Solutions For All. All rights reserved JB.
                     </div>
                 </nav>
+
 
 
 

@@ -15,8 +15,16 @@
             <header class="header">
                 <img src="img/logo.png" alt="trillo logo" class="logo">
 
-                <form action="#" class="search">               
-                    <div class="gcse-search"></div>
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search hotels">
+                  
+                        <!-- <div class="gcse-search"></div> -->
+                        <gcse:search gname='abcd'></gcse:search>
+                    <button class="search__button ">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
                 </form>
 
                 <nav class="user-nav">
@@ -28,7 +36,6 @@
                     </div>
                 </nav>
             </header>
-
 
             <div class="content">
                 <nav class="sidebar">
@@ -124,23 +131,23 @@
 
                     <div class="detail">
                         <div class="description">
-                            <table>
+                            <table class="prices-data-table">
                                 <tr>
                                   <th colspan="5">Cena apartmana po noćenju</th>
                                 </tr>
                                 <tr>
-                                  <td class>Period boravka</td>
-                                  <td>15.01. - 31.04.</td>
-                                  <td>01.05. - 31.08.</td>
-                                  <td>01.09 - 29.12.</td>
-                                  <td>30.12. - 15.01.</td>
+                                  <td class="prices-data prices-data-white">Period boravka</td>
+                                  <td class="prices-data prices-data-white"><span class="date-block">15.01.</span><span class="date-block">-</span><span class="date-block">31.04.</span></td>
+                                  <td class="prices-data prices-data-white"><span class="date-block">01.05.</span><span class="date-block">-</span><span class="date-block">31.08.</span></td>
+                                  <td class="prices-data prices-data-white"><span class="date-block">01.09.</span><span class="date-block">-</span><span class="date-block">29.12.</span></td>
+                                  <td class="prices-data prices-data-white"><span class="date-block">30.12.</span><span class="date-block">-</span><span class="date-block">15.01.</span></td>
                                 </tr>
                                 <tr>
-                                  <td>Cena Apartmana</td>
-                                  <td>25€ / 3.000 rsd</td>
-                                  <td>35€ / 4.100 rsd</td>
-                                  <td>30€ / 3.500 rsd</td>
-                                  <td>40€ / 4.700 rsd</td>
+                                  <td class="prices-data">Cena Apartmana</td>
+                                  <td class="prices-data"><span class="price-block">25 €</span><span class="price-block">-</span><span class="price-block">3.000 RSD</span></td>
+                                  <td class="prices-data"><span class="price-block">35 €</span><span class="price-block">-</span><span class="price-block">4.100 RSD</span></td>
+                                  <td class="prices-data"><span class="price-block">30 €</span><span class="price-block">-</span><span class="price-block">3.500 RSD</span></td>
+                                  <td class="prices-data"><span class="price-block">40 €</span><span class="price-block">-</span><span class="price-block">4.700 RSD</span></td>
                                 </tr>
                               </table>
 
@@ -154,7 +161,7 @@
                             </p>
 
                             <p class="paragraph">
-                                Za dodatne informacije kontaktirajte nas <span style="color:darkred">misicnikola@gmail.com</span> ili na telefon: <span style="color:darkred">+381 64 354 9898</span>
+                                Za dodatne informacije kontaktirajte nas <span style="color:darkred">misicnikola88@gmail.com</span> ili na telefon: <span style="color:darkred">+381 64 354 9898</span>
                             </p>
 
 
