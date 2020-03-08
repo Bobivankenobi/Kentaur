@@ -11,7 +11,7 @@ $('.popup-gallery').magnificPopup({
     image: {
         tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
         titleSrc: function(item) {
-            return "Kentaur Apartmani created by: " + '<small>by Boban Janković</small>';
+            return "Kentaur Apartmani created by: " + '<small>Boban Janković</small>';
         }
     }
 });
