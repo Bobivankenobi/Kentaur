@@ -31,18 +31,10 @@
                         <img src="img/miske.jpg" alt="User photo" class="user-nav__user-photo">
                         <span class="user-nav__user-name">Nikola</span>
                     </div>
-         
-    </li>
-  </ul>
+                    <div id="google_translate_element"></div>
                 </nav>
             </header>
-            <ul class="list-unstyled ct-language__dropdown">
-                <li><a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en"><img src="https://www.solodev.com/assets/google-translate/flag-usa.png" alt="USA"></a></li>
-                <li><a href="#googtrans(en|es)" class="lang-es lang-select" data-lang="es"><img src="https://www.solodev.com/assets/google-translate/flag-mexico.png" alt="MEXICO"></a></li>
-                <li><a href="#googtrans(en|fr)" class="lang-es lang-select" data-lang="fr"><img src="https://www.solodev.com/assets/google-translate/flag-france.png" alt="FRANCE"></a></li>
-                <li><a href="#googtrans(en|zh-CN)" class="lang-es lang-select" data-lang="zh-CN"><img src="https://www.solodev.com/assets/google-translate/flag-china.png" alt="CHINA"></a></li>
-                <li><a href="#googtrans(en|ja)" class="lang-es lang-select" data-lang="ja"><img src="https://www.solodev.com/assets/google-translate/flag-japan.png" alt="JAPAN"></a></li>
-              </ul>
+           
 
             <div class="content">
                 <nav class="sidebar">
@@ -481,32 +473,14 @@
         })();
         </script>
         <!--End of Tawk.to Script-->
-        <script type="text/javascript">
-            function googleTranslateElementInit() {
-              new google.translate.TranslateElement({pageLanguage: 'sr', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
-            }
         
-            function triggerHtmlEvent(element, eventName) {
-              var event;
-              if (document.createEvent) {
-                event = document.createEvent('HTMLEvents');
-                event.initEvent(eventName, true, true);
-                element.dispatchEvent(event);
-              } else {
-                event = document.createEventObject();
-                event.eventType = eventName;
-                element.fireEvent('on' + event.eventType, event);
-              }
-            }
-        
-            jQuery('.lang-select').click(function() {
-              var theLang = jQuery(this).attr('data-lang');
-              jQuery('.goog-te-combo').val(theLang);
-        
-              window.location = jQuery(this).attr('href');
-              location.reload();
-            });
-        </script>
-        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'sr',includedLanguages: 'en,de,fr,es'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </body>
 </html>
