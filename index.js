@@ -72,3 +72,6 @@ function callGsce(currentValue) {
     $("#___gcse_0 ").addClass("visible");
    
 }
+$(window).load(function() {
+   alert("sss")
+  });
