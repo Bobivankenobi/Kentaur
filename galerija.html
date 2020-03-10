@@ -92,6 +92,14 @@
                         <figure class="gallery__item">
                             <img src="img/slide3.jpg" alt="Photo of hotel 3" class="gallery__photo">
                         </figure>
+                        <ul class="list-unstyled ct-language__dropdown">
+                            <li><a href="#googtrans(sr|en)" class="lang-en lang-select" data-lang="en"><img class="lang-flag" src="./img/flags/united-kingdom.svg" alt="ENGLAND"></a></li>
+                            <li><a href="#googtrans(sr|es)" class="lang-es lang-select" data-lang="es"><img class="lang-flag" src="./img/flags/spain.svg" alt="SPAIN"></a></li>
+                            <li><a href="#googtrans(sr|fr)" class="lang-fr lang-select" data-lang="fr"><img class="lang-flag" src="./img/flags/france.svg" alt="FRANCE"></a></li>
+                            <li><a href="#googtrans(sr|de)" class="lang-fr lang-select" data-lang="de"><img class="lang-flag" src="./img/flags/germany.svg" alt="GERMANY"></a></li>
+                            <li><a href="#googtrans(sr|it)" class="lang-it lang-select" data-lang="it"><img class="lang-flag" src="./img/flags/italy.svg" alt="ITALY"></a></li>
+            
+                        </ul>
                     </div>
 
                     <div class="overview">
@@ -466,6 +474,21 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
+    
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'sr',includedLanguages: 'en,de,fr,es,it'}, 'google_translate_element');
+    }
+    jQuery('.lang-select').click(function() {
+          var theLang = jQuery(this).attr('data-lang');
+          jQuery('.goog-te-combo').val(theLang);
+    
+          window.location = jQuery(this).attr('href');
+          location.reload();
+        });
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     </body>
 </html>
