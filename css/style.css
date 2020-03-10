@@ -20,15 +20,22 @@
 .list-unstyled {
     border-radius: 10px;
     padding: 7px;
+    padding-right: 10px;
     padding-bottom: 3px;
     background-color: white;
     display: flex;
     width: fit-content;
     list-style: none;
     position: absolute;
-    right: 0px;
+    right: -3px;
     top: -12px;
    
+}
+.goog-te-banner {
+    display:none !important;
+}
+.goog-te-banner-frame  {
+    display:none !important;
 }
 @media only screen and (max-width:900px){
     .list-unstyled {
@@ -44,6 +51,9 @@
     margin-right:3px;
    
     
+}
+.content {
+    overflow:hidden;
 }
 .lang-flag:hover {
    opacity:0.7;
