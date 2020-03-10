@@ -30,7 +30,7 @@
     top: -12px;
    
 }
-@media only screen and (max-width:1024px){
+@media only screen and (max-width:900px){
     .list-unstyled {
     background-color: var(--color-grey-dark-1);
     }
