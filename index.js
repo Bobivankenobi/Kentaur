@@ -1,3 +1,4 @@
+window.location.href=window.location.href+"?#";
 $('.popup-gallery').magnificPopup({
     delegate: 'a',
     type: 'image',
@@ -52,6 +53,7 @@ $(".search__input").keyup(function(event) {
     console.log(currentValue);
     var keycode = (event.keyCode ? event.keyCode : event.which);
 	if(keycode == '13'){
+       
         callGsce(currentValue);
     }
     
@@ -59,6 +61,7 @@ $(".search__input").keyup(function(event) {
 
 
 $(".search__button ").click(function() {
+ 
     let currentValue = $(".search__input").val();
     if(currentValue !== ""){
         callGsce(currentValue);
