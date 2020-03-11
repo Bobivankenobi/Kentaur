@@ -94,7 +94,7 @@
                             <a href="#googtrans(sr|en)" class="lang-en lang-select" data-lang="en"><img class="lang-flag" src="./img/flags/united-kingdom.svg" alt="ENGLAND"></a>
                             <a href="#googtrans(sr|de)" class="lang-fr lang-select" data-lang="de"><img class="lang-flag" src="./img/flags/germany.svg" alt="GERMANY"></a>
                             <a href="#googtrans(sr|it)" class="lang-it lang-select" data-lang="it"><img class="lang-flag" src="./img/flags/italy.svg" alt="ITALY"></a>
-                            <a id="restore-lang"><img  class="lang-flag" src="./img/flags/serbia.svg" alt="Serbia"></a>
+                            <a class="restore-lang"><img  class="lang-flag" src="./img/flags/serbia.svg" alt="Serbia"></a>
                          </div>
 
 
@@ -441,7 +441,7 @@
           window.location = jQuery(this).attr('href');
           location.reload();
         });
-        $("#restore-lang").on( "click", function() {
+        $(".restore-lang").on( "click", function() {
         restoreLang();
     
     });
