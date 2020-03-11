@@ -78,3 +78,28 @@ function callGsce(currentValue) {
 // $(window).load(function() {
 //    alert("sss")
 //   });
+function restoreLang() {
+    var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
+    if(!iframe) return;
+  
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var restore_el = innerDoc.getElementsByTagName("button");
+  
+    for(var i = 0; i < restore_el.length; i++){
+      if(restore_el[i].id.indexOf("restore") >= 0) {
+        restore_el[i].click();
+        var close_el = innerDoc.getElementsByClassName("goog-close-link");
+        close_el[0].click();
+        return;
+      }
+    }
+  }
+      $(".restore-lang").on( "click", function() {
+          restoreLang();
+      
+      });
+
+
+
+
+

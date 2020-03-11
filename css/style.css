@@ -46,6 +46,10 @@ padding-top:6px;
     }
 }
 
+.restore-lang {
+    cursor:pointer;
+}
+
 .gallery {
     position:relative;
 }
