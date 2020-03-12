@@ -100,8 +100,15 @@ function restoreLang() {
       });
 
 
-
-$( "#show-more" ).click(function() {
+let a = 1;
+$( ".show-more" ).click(function() {
+    a++;
+    if(a%2===0){
+        $( ".show-more" ).html("Prikaži manje >");
+    }else {
+        $( ".show-more" ).html("Prikaži više >");
+    }
+   
   $( ".rating-toogle" ).slideToggle( "slow", function() {
   console.log("toggled")
   });
