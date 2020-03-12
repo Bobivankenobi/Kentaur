@@ -12,7 +12,7 @@ $('.popup-gallery').magnificPopup({
     image: {
         tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
         titleSrc: function(item) {
-            return "Kentaur Apartmani created by: " + '<small>Boban Janković</small>';
+            return "Apartman Kentaur created by: " + '<small>Boban Janković</small>';
         }
     }
 });
@@ -98,6 +98,15 @@ function restoreLang() {
           restoreLang();
       
       });
+
+
+
+$( "#show-more" ).click(function() {
+  $( ".rating-toogle" ).slideToggle( "slow", function() {
+  console.log("toggled")
+  });
+});
+
 
 
 
