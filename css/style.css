@@ -99,6 +99,13 @@ html {
    
 
  }
+ .container {
+     position:relative;
+ }
+
+ .social-icons{
+     top:-36px !important;
+ }
 
  @media only screen and (max-width:350px){
      .prices-data, th { 
