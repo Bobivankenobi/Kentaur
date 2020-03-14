@@ -105,6 +105,23 @@ html {
     font-size: 24px;
  }
 
+ .viber:hover {
+     cursor:pointer;
+    opacity:0.7;
+ }
+ .facebook:hover {
+    cursor:pointer;
+    opacity:0.7;
+}
+.instagram:hover {
+    cursor:pointer;
+    opacity:0.7;
+}
+.whatsapp:hover {
+    cursor:pointer;
+    opacity:0.7;
+}
+
  .icofont-facebook:before {
     color: var(--color-primary);
     font-size: 24px;
