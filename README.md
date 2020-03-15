@@ -1,3 +1,5 @@
 # Kentaur Apartmants
 
-# Web presentation mady by Frontend Developer Boban Jankovic
+# Web presentation made by 
+  Frontend Developer 
+  Boban Jankovic
