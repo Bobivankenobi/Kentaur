@@ -3,9 +3,7 @@ let firstIn=true;
 $(document).scroll(function(){
     if($( window ).height()>400){
         if(firstIn){
-        
-          
-
+    
             $(".cookieContainer").animate({
                 top: "50%",
                 opacity: 1,

@@ -39,7 +39,7 @@
 
 .close-sign {
     padding: 1px 2px;
-    background-color: var(--color-primary-light);
+    background-color: whitesmoke;
     border-radius:50%;
     position:absolute;
     right:10px;
@@ -52,7 +52,7 @@
 }
 .close-sign:hover {
     cursor:pointer;
-    background-color: var(--color-primary);
+   border:1px solid var(--color-primary);
 }
 
 
