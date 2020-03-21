@@ -38,7 +38,8 @@
 
 
 .close-sign {
-    padding: 1px 2px;
+    font-size: 8px;
+    padding: 2px 3px;
     background-color: whitesmoke;
     border-radius:50%;
     position:absolute;
