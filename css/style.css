@@ -114,3 +114,5 @@ body, p, li, h2 {
 .detail {
     font-size: 1.5rem;
 }
+.user-nav__user-photo {
+    height: 4.75rem !important;
