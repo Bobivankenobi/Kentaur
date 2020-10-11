@@ -108,7 +108,7 @@ span{margin-left:8px}.btn-inline:focus{outline:0;-webkit-animation:pulsate 1s in
 h1 {
 font-weight:600;
 }
-body p li h2 {
+body, p, li, h2 {
     color:darkslategray;
 }
 .detail {
