@@ -117,3 +117,6 @@ body, p, li, h2 {
 .user-nav__user-photo {
     height: 4.75rem !important;
 }
+body {
+top:0 !important;
+}
