@@ -118,9 +118,9 @@ body, p, li, h2 {
     height: 4.75rem !important;
 }
 
-body {
-    @media only screen (min-width: 1200px){
-        top:0 !important;
-    }
+@media only screen and (min-width: 1200px) {
+  body {
+    top: 0 !important;
+  }
 }
 
