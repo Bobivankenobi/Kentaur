@@ -31,7 +31,7 @@ $(".close-sign").click(function(){
 
 
 $(".search__button ").click(function(){
-    window.location.href=window.location.href+"?#";
+    window.history.pushState("?#", "", "");
 })
 
 
