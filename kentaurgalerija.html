@@ -14,6 +14,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./libs/icofont/icofont.min.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -42,6 +43,7 @@
             <img src="img/logo.png" alt="trillo logo" class="logo">
             <form action="#" class="search">
                 <input type="text" class="search__input" placeholder="Search hotels">
+                <!-- <div class="gcse-search"></div> -->
                 <gcse:search gname='abcd'></gcse:search>
                 <button class="search__button ">
                     <svg class="search__icon">
@@ -62,7 +64,7 @@
             <nav class="sidebar">
                 <ul class="side-nav">
                     <li class="side-nav__item side-nav-about-us">
-                        <a href="onamaapartmankentaur.html" class="side-nav__link">
+                        <a href="index.html" class="side-nav__link">
                             <svg class="side-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-home"></use>
                             </svg>
@@ -70,13 +72,13 @@
                         </a>
                     </li>
                     <li class="side-nav__item side-nav-gallery">
-                        <a href="galerijaapartmankentaur.html" class="side-nav__link">
+                        <a href="kentaurgalerija.html" class="side-nav__link">
                             <img src="./img/SVG/gallery.svg" class="gallery-icon" alt="aaa">
                             <span>Galerija</span>
                         </a>
                     </li>
                     <li class="side-nav__item side-nav-prices">
-                        <a href="cenovnikapartmankentaur.html" class="side-nav__link">
+                        <a href="kentaurcenovnik.html" class="side-nav__link">
                             <svg class="side-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-key"></use>
                             </svg>
@@ -84,7 +86,7 @@
                         </a>
                     </li>
                     <li class="side-nav__item side-nav-location">
-                        <a href="lokacijapartmankentaur.html" class="side-nav__link">
+                        <a href="kentaurlokacija.html" class="side-nav__link">
                             <svg class="side-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-map"></use>
                             </svg>
@@ -194,6 +196,7 @@
                             <g>
                             </g>
                         </svg>
+
                         <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                         <svg class="overview__icon-star" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
@@ -344,46 +347,20 @@
                 </div>
                 <div class="detail">
                     <div class="description">
-                        <table class="prices-data-table">
-                            <tr>
-                                <th colspan="5">Cena apartmana po noćenju</th>
-                            </tr>
-                            <tr>
-                                <td class="prices-data prices-data-white">Period boravka</td>
-                                <td class="prices-data prices-data-white"><span class="date-block">15.01.</span><span
-                                        class="date-block">-</span><span class="date-block">31.04.</span></td>
-                                <td class="prices-data prices-data-white"><span class="date-block">01.05.</span><span
-                                        class="date-block">-</span><span class="date-block">31.08.</span></td>
-                                <td class="prices-data prices-data-white"><span class="date-block">01.09.</span><span
-                                        class="date-block">-</span><span class="date-block">29.12.</span></td>
-                                <td class="prices-data prices-data-white"><span class="date-block">30.12.</span><span
-                                        class="date-block">-</span><span class="date-block">15.01.</span></td>
-                            </tr>
-                            <tr>
-                                <td class="prices-data">Cena Apartmana</td>
-                                <td class="prices-data"><span class="price-block">30 €</span><span
-                                        class="price-block">-</span><span class="price-block">3.500 RSD</span></td>
-                                <td class="prices-data"><span class="price-block">40 €</span><span
-                                        class="price-block">-</span><span class="price-block">4.700 RSD</span></td>
-                                <td class="prices-data"><span class="price-block">30 €</span><span
-                                        class="price-block">-</span><span class="price-block">3.500 RSD</span></td>
-                                <td class="prices-data"><span class="price-block">40 €</span><span
-                                        class="price-block">-</span><span class="price-block">4.700 RSD</span></td>
-                            </tr>
-                        </table>
-                        <p style="margin-top: 30px; color:darkred" class="paragraph paragraph-red">
-                            Prilikom rezervacije uplaćuje se akontacija u visini od 50% od ukupnog iznosa boravka.
-                        </p>
-                        <p style="color:darkred" class="paragraph paragraph-red">
-                            Otkazni rok rezervacije je 5 dana pre dolaska. U slučaju nedolaska ili otkaza kraćeg od 5
-                            dana
-                            uplaćeni avans se ne refundira. U slučaju skraćenja boravka od strane individualnih gostiju
-                            apartman Kentaur zadržava pravo da naplati 15% vrednosti nerealizovanog dela aranžmana.
-                        </p>
-                        <p class="paragraph">
-                            Za dodatne informacije kontaktirajte nas putem maila <span
-                                style="color:darkred">apartmankentaurvb@gmail.com</span> ili na telefon: +381 64 354 9898 .
-                        </p>
+                        <div class="popup-gallery">
+                            <a href="./img/gallery/111.jpg" title="The Cleaner"><img src="./img/gallery/111.jpg"></a>
+                            <a href="./img/gallery/22.jpg" title="The Cleaner"><img src="./img/gallery/22.jpg"></a>
+                            <a href="./img/gallery/33.JPG" title="The Cleaner"><img src="./img/gallery/33.JPG"></a>
+                            <a href="./img/gallery/44.jpg" title="The Cleaner"><img src="./img/gallery/44.jpg"></a>
+                            <a href="./img/gallery/55.JPG" title="The Cleaner"><img src="./img/gallery/55.JPG"></a>
+                            <a href="./img/gallery/66.JPG" title="The Cleaner"><img src="./img/gallery/66.JPG"></a>
+                            <a href="./img/gallery/77.JPG" title="The Cleaner"><img src="./img/gallery/77.JPG"></a>
+                            <a href="./img/gallery/88.JPG" title="The Cleaner"><img src="./img/gallery/88.JPG"></a>
+                            <a href="./img/gallery/99.JPG" title="The Cleaner"><img src="./img/gallery/99.JPG"></a>
+                            <a href="./img/gallery/100.JPG" title="The Cleaner"><img src="./img/gallery/100.JPG"></a>
+                            <a href="./img/gallery/1111.JPG" title="The Cleaner"><img src="./img/gallery/1111.JPG"></a>
+                            <a href="./img/gallery/122.JPG" title="The Cleaner"><img src="./img/gallery/122.JPG"></a>
+                        </div>
                     </div>
                     <div class="user-reviews">
                         <figure class="review">
