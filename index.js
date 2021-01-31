@@ -33,6 +33,15 @@ if($(".cookieContainer").length){
 
 }
 
+if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('/sw.js').then(function () {
+        console.log("Service Worker Registered");
+    })
+}else {
+    console.log("No service worker in browser, if dev it needs to be https or localhost")
+}
+
+
 
 
 
